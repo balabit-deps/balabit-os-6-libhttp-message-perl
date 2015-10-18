@@ -1,0 +1,8 @@
+---
+Archive: CPAN
+Bug-Database: https://rt.cpan.org/Public/Dist/Display.html?Name=HTTP-Message
+Bug-Submit: bug-HTTP-Message@rt.cpan.org
+Contact: Gisle Aas <gisle@activestate.com>
+Name: HTTP-Message
+Repository: https://github.com/libwww-perl/HTTP-Message.git
+Repository-Browse: https://github.com/libwww-perl/HTTP-Message

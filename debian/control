@@ -1,0 +1,43 @@
+Source: libhttp-message-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Xavier Guimard <x.guimard@free.fr>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: libencode-locale-perl,
+                     libhttp-date-perl,
+                     libio-html-perl,
+                     liblwp-mediatypes-perl,
+                     liburi-perl,
+                     perl (>= 5.11) | libio-compress-perl,
+                     perl
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libhttp-message-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libhttp-message-perl.git
+Homepage: https://metacpan.org/release/HTTP-Message
+
+Package: libhttp-message-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libencode-locale-perl,
+         libhttp-date-perl,
+         libio-html-perl,
+         liblwp-mediatypes-perl,
+         liburi-perl,
+         perl (>= 5.11) | libio-compress-perl
+Breaks: libwww-perl (<< 6.00)
+Replaces: libwww-perl (<< 6.00)
+Description: perl interface to HTTP style messages
+ The HTTP::Message distribution contains classes useful for representing the
+ messages passed in HTTP style communication. These are classes representing
+ requests, responses and the headers contained within them.
+ .
+ The HTTP::Headers class encapsulates HTTP-style message headers. The headers
+ consist of attribute-value pairs also called fields, which may be repeated,
+ and which are printed in a particular order. The field names are cases
+ insensitive.
+ .
+ Instances of this class are usually created as member variables of the
+ HTTP::Request and HTTP::Response classes, internal to the library.
